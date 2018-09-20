@@ -14,7 +14,7 @@ def convD(n,b):
     if n < b:
         return convertString[n]
     else:
-        return conv(n//b,b) + convertString[n%b]
+        return convD(n//b,b) + convertString[n%b]
     
     
 print(convD(n,b))
