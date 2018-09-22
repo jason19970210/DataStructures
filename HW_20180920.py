@@ -1,32 +1,44 @@
-import time
+import datetime
 
-n = int(input("請輸入十進制正整數: "))
-b = int(input("base: "))
+i = 0
 convertString = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+a = []
 
 
-#tStartD = time.time()
+# --- def ---
 
-
+# --- 遞迴 ---
 def convD(n,b):
     
     if n < b:
         return convertString[n]
     else:
-        return convD(n//b,b) + convertString[n % b]
+        return convD(n//b,b) + convertString[n%b]
 
+# --- 迴圈 ---
 def convH(n,b):
-
-    while currentn != 0:
-        return
-        
-        
-
+    
+    q = n / b
+    r = n % b
+    
 
 
 
-#str = 'x 的值为： ' + repr(x) + ',  y 的值为：' + repr(y) + '...'
-print("遞迴轉換:  ",n,"(10) ->",convD(n,b),"(",b,")")
-print("迴圈轉換:  ",n,"(10) ->",convH(n,b),"(",b,")")
-#tEndD = time.time()
-#print ("Cost ",tEndD - tStartD," sec")
+
+
+
+
+# --- Loop for 5 inputs & results ---
+while i < 5:
+    
+    i += 1
+    print("第",i,"筆資料")
+    
+    n = int(input("請輸入十進制正整數: "))
+    b = int(input("base: "))
+    
+    
+    tStartD = datetime.datetime.now()
+    print(n,"(10) ->",convD(n,b),"(",b,")")
+    tEndD = datetime.datetime.now()
+    print ("遞迴轉換運行時間: ",tEndD - tStartD, "\n")
