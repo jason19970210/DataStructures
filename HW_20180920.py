@@ -1,12 +1,11 @@
 import time
 
-n = int(input("請輸入十進制: "))
-b = int(input("請輸入欲轉換進制: "))
+n = int(input("請輸入十進制正整數: "))
+b = int(input("base: "))
 convertString = "0123456789ABCDEFGHIJKLMNOP"
 
 
 tStartD = time.time()
-
 
 
 def convD(n,b):
@@ -16,7 +15,8 @@ def convD(n,b):
     else:
         return convD(n//b,b) + convertString[n%b]
     
-    
-print(convD(n,b))
+
+#str = 'x 的值为： ' + repr(x) + ',  y 的值为：' + repr(y) + '...'
+print(n,"(10) ->",convD(n,b),"(",b,")")
 tEndD = time.time()
-print (tEndD - tStartD)
+print ("Cost ",tEndD - tStartD," sec")
