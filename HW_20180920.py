@@ -6,7 +6,6 @@ a = []
 
 
 # --- def ---
-
 # --- 遞迴 ---
 def convD(n,b):
     
@@ -14,6 +13,7 @@ def convD(n,b):
         return convertString[n]
     else:
         return convD(n//b,b) + convertString[n%b]
+
 
 # --- 迴圈 ---
 def convH(n,b):
