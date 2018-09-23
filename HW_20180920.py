@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
+
 import datetime
 
 i = 0
 convertString = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-a = []
 
 
 # --- def ---
