@@ -9,7 +9,10 @@
     1. N/2
     2. N%2
     3. reverse print 餘數
-
++ 費氏數列
++ Modular Exponention 模指數運算
+    1. a<sup>b</sup> mod(%) N
+    2. RSA Security 加解密
 
 
 ## Homework    
