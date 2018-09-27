@@ -13,6 +13,9 @@
 + Modular Exponention 模指數運算
     1. a<sup>b</sup> mod(%) N
     2. RSA Security 加解密
++ 大整數乘法
+    1. 拆解 N<sub>1</sub> x 10<sup>n</sup> + N<sub>2</sub>
+    2. 
 
 
 ## Homework    
