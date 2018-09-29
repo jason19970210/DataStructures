@@ -16,7 +16,10 @@
 + 大整數乘法
     1. 拆解 N<sub>1</sub> x 10<sup>n</sup> + N<sub>2</sub>
 + Closet Pair of Points
-+ Merge Sort
++ **Merge Sort 合併排序法**
+    1. 遞迴切割與合併
+    2. **必考**
++ Tower of Hanoi 河內塔
     1. 
 
 
