@@ -9,6 +9,7 @@
     1. N/2
     2. N%2
     3. reverse print 餘數
+    + HW : !(https://github.com/jason19970210/DataStructures/tree/master/HW/20180920)
 + 費氏數列
 + Modular Exponention 模指數運算
     1. a<sup>b</sup> mod(%) N
@@ -20,8 +21,9 @@
     1. 遞迴切割與合併
     2. **必考**
 + Tower of Hanoi 河內塔
-    1. 
-
+    1. N / N-1 
+    2. 起始點 from、暫存點 temp、目標點 to (assign to char)
+    3. 
 
 ## Homework    
 20180920
