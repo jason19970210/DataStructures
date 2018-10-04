@@ -35,7 +35,7 @@
     + 交 .java & .exe & .doc(.pdf) with code and 5 results  
 + 20181004
     + N = 3 ++ 5  
-    + 次數
+    + 次數 -> 全域變數(M = 0) 
     + 程序執行時間 (Tend - Tstart)
     + Source Code
         + h(N,'A','B','C')
