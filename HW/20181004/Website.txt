@@ -1,1 +1,1 @@
-https://github.com/jason19970210/DataStructures/tree/master/HW/20181004
+https://github.com/jason19970210/DataStructures/blob/master/HW/20181004/HW_20181004.ipynb
