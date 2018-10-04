@@ -26,10 +26,16 @@
     3. 
 
 ## Homework    
-20180920
-+ 使用者輸入十進制: n
-+ 輸入欲轉換進制: b
-+ 輸出結果: N(10) ->  X(B)  
-+ 遞迴 / 迴圈  
-+ 執行時間 (加分)
-+ 交 .java & .exe & .doc(.pdf) with code and 5 results  
++ 20180920
+    + 使用者輸入十進制: n
+    + 輸入欲轉換進制: b
+    + 輸出結果: N(10) ->  X(B)  
+    + 遞迴 / 迴圈  
+    + 執行時間 (加分)
+    + 交 .java & .exe & .doc(.pdf) with code and 5 results  
++ 20181004
+    + N = 3 ++ 5  
+    + 次數
+    + 程序執行時間 (Tend - Tstart)
+    + Source Code
+        + h(N,'A','B','C')
