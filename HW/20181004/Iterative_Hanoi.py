@@ -31,8 +31,10 @@ def hanoiH(n, a, b, c):
             m = m - 1
             pa, pb, pc = pa, pc, pb
 
-
-start = datetime.datetime.now()      
-hanoiH(28, 'A', 'B', 'C')
-end = datetime.datetime.now()
-print(end-start)
+n = 3
+while n < 68 :
+    start = datetime.datetime.now()
+    hanoiH(n, 'A', 'B', 'C')
+    end = datetime.datetime.now()
+    print(n,end-start)
+    n = n + 5
