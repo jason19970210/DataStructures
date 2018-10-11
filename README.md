@@ -25,11 +25,16 @@
     2. 起始點 from、暫存點 temp、目標點 to (assign to char)
 + Algorithm Analyzsis
     1. Relative Growth Rate 相對成長率 RGR
-        + RGR 方式：lim(N->)
+        + RGR 方式：lim(N->infinity) T(N)/G(N)
+            + The Results : `0`,`infinity`,`C 定值`,`dynamic 動態`
+            + T(N) => 演算法的時間函數
+            + G(N) => 另一個演算法的時間函數 / 自訂的數學函數
+        + Ex.   T(N) = 3N<sup>2</sup>+ N + 1  
+                T(10) 3x10^2 + 10 + 1  
+                G(N) = 2N<sup>3</sup> + 1  
+                lim(N->infinity) T(N)/G(N) = 0 (趨近於0)
+                
     2. Bog O. Notation BigO表示法
-
-![equation](http://latex.codecogs.com/gif.latex?Concentration%3D%5Cfrac%7BTotalTemplate%7D%7BTotalVolume%7D) 
-
 
 ## Homework    
 + 20180920
