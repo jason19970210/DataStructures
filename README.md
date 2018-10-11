@@ -26,8 +26,10 @@
 + Algorithm Analyzsis
     1. Relative Growth Rate 相對成長率 RGR
         + RGR 方式：lim(N->)
-        + `\frac{n!}{k!(n-k)!}`
     2. Bog O. Notation BigO表示法
+
+![equation](http://latex.codecogs.com/gif.latex?Concentration%3D%5Cfrac%7BTotalTemplate%7D%7BTotalVolume%7D) 
+
 
 ## Homework    
 + 20180920
