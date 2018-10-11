@@ -25,7 +25,8 @@
     2. 起始點 from、暫存點 temp、目標點 to (assign to char)
 + Algorithm Analyzsis
     1. Relative Growth Rate 相對成長率 RGR
-        + RGR 方式：lim(N->\frac{n!}{k!(n-k)!})
+        + RGR 方式：lim(N->)
+        + `\frac{n!}{k!(n-k)!}`
     2. Bog O. Notation BigO表示法
 
 ## Homework    
