@@ -34,6 +34,7 @@
                 G(N) = 2N<sup>3</sup> + 1  
                 lim(N->infinity) T(N)/G(N) = 0 (趨近於0)
                 
+
     2. Bog O. Notation BigO表示法
 
 ## Homework    
