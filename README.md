@@ -36,6 +36,10 @@
 
 
     2. Bog O. Notation BigO表示法
+        + Big Oh. 上限值
+        + Big Omega 下限值
+        + Big Theta 接近值
+        + Little Oh. 小於
 
 ## Homework    
 + 20180920
