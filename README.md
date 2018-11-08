@@ -127,7 +127,7 @@
             public boolean isPasdtEnd(){
                 return current == null;
             }
-            public Object retrieve(){
+            public Object retrieve(){ // 存取
                 return isPasdtEnd() ? null : current.element;
             }
             public void advance(){
@@ -137,8 +137,32 @@
             }
             ListNode current; //Current position
         }
-        
+        ```
+    + Linked List Class Skeleton
+        ```java
+        public class LinkedList{
+            public LinkedList(){
+                header = new ListNode(null);
+            }
+            public boolean isEmpty(){
+                return header.next == null;
+            }
+            public void makeEmpty(){
+                header.next = null;
+            }
+            public LinkedListItr zeroth(){
+                return new LinkedListItr(header);
+            }
+            public LinkedListItr first(){
+                return new LinkedListItr(header.next);
+            }
+            public LinkedListItr first(){
+                return new LinkedListItr(header.next);
+            }
+            public LinkedListItr find(Object x){
 
+            }
+        }
         ```
 
 ## Homework    
