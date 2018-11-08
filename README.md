@@ -94,7 +94,7 @@
         + 捷運概念 Linked List Without Header： A > B > C > D
             + 優點：沒有浪費 Header 空間
             + 缺點：當沒有資料時，List 不存在
-            
+
     + Type Declaration for Linked List Node
         ```java
         class ListNode{
@@ -103,7 +103,7 @@
             ListNode(Object theElement){
                 this (theElement), null;
             }
-            LinkNode( Object theElement , ListNode n){
+            LinkNode( Object theElement , ListNode n){  // ListNode > 遞迴定義
                 element = theElement;
                 next = n;
             }
@@ -111,7 +111,7 @@
             // Nouns
             // Friendly Data
             Object element;
-            ListNode next;
+            ListNode next; // next : next position(下一個記憶體位置)
         }
         ```
 
