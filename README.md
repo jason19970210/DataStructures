@@ -64,11 +64,12 @@
                     + 先新增一 node (F<sub>400</sub> | null)
                     + 將 F 的 next position 修改為 下一資料塊的 position
                     + 再將 A 的 next position 修改為 F 的 position
+                        + 主控權 位於 A
                     + New List : [(Z<sub>data</sub> | 100) (A<sub>100</sub> | ~~50~~ **400**) (F<sub>400</sub> | **50**) (B<sub>50</sub> | 36) (D<sub>36</sub> | null)]
                 + 新增於 List 末
                     + 先新增一 node (K<sub>450</sub> | null)
                     + 將 D 的 next position = 450
-                    + New List :
+                    + New List : [(Z<sub>data</sub> | 100) (A<sub>100</sub> | ~~50~~ **400**) (F<sub>400</sub> | **50**) (B<sub>50</sub> | 36) (D<sub>36</sub> | 450) (K<sub>450<sub> | null)]
             + 刪除
         + 火車概念： H<sub>0</sub> > A > B > C (H<sub>0</sub> >> Header)
             + 優點：當沒有資料時，Header 依舊存在
