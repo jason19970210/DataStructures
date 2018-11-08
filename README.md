@@ -58,7 +58,7 @@
                 + 新增於 List 首 
                     + 先新增一 node (Z<sub>data</sub> | null)
                     + 將 null 值 = 100
-                    + New List : [(Z<sub>data</sub> | 100) (A<sub>100</sub> | 50) (B<sub>50</sub> | 36) (D<sub>36</sub> | null)]
+                    + New List : [(Z<sub>data</sub> | **100**) (A<sub>100</sub> | 50) (B<sub>50</sub> | 36) (D<sub>36</sub> | null)]
 
                 + 新增於 List 中
                     + 先新增一 node (F<sub>400</sub> | null)
@@ -69,7 +69,7 @@
                 + 新增於 List 末
                     + 先新增一 node (K<sub>450</sub> | null)
                     + 將 D 的 next position = 450
-                    + New List : [(Z<sub>data</sub> | 100) (A<sub>100</sub> | ~~50~~ **400**) (F<sub>400</sub> | **50**) (B<sub>50</sub> | 36) (D<sub>36</sub> | 450) (K<sub>450</sub> | null)]
+                    + New List : [(Z<sub>data</sub> | 100) (A<sub>100</sub> | 400) (F<sub>400</sub> | 50) (B<sub>50</sub> | 36) (D<sub>36</sub> | **450**) (K<sub>450</sub> | null)]
             + 刪除
         + 火車概念： H<sub>0</sub> > A > B > C (H<sub>0</sub> >> Header)
             + 優點：當沒有資料時，Header 依舊存在
