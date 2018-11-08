@@ -44,8 +44,10 @@
 + Search Method
     + BST (Binary Search Tree / Binary Search Algrithm)
 
-+ ADT (Abstract Data Type) 抽象資料型態
-    + 資料儲存結構
++ List ADT (Abstract Data Type) 抽象資料型態
+    + 資料儲存結構 List Implementation
+        + Linked List
+        + Array
     + 資料操作 (新增、刪除、修改、查詢、列印)
     + Linked List
         + 其儲存方式：
@@ -86,12 +88,32 @@
                 + 資源佔用問題：刪除 List 但 資料依舊儲存於記憶體位置 (Recycle Linked List)
                         + 資源回收：保留閒置記憶體
                         + Release：將閒置記憶體釋放掉 將資源轉移回 CPU
-        + 火車概念： H<sub>0</sub> > A > B > C (H<sub>0</sub> >> Header)
+        + 火車概念 Linked List With Header： H<sub>0</sub> > A > B > C (H<sub>0</sub> >> Header)
             + 優點：當沒有資料時，Header 依舊存在
             + 缺點：浪費 Header 空間
-        + 捷運概念： A > B > C > D
+        + 捷運概念 Linked List Without Header： A > B > C > D
             + 優點：沒有浪費 Header 空間
             + 缺點：當沒有資料時，List 不存在
+            
+    + Type Declaration for Linked List Node
+        ```java
+        class ListNode{
+            //Verb.
+            // Constructors
+            ListNode(Object theElement){
+                this (theElement), null;
+            }
+            LinkNode( Object theElement , ListNode n){
+                element = theElement;
+                next = n;
+            }
+
+            // Nouns
+            // Friendly Data
+            Object element;
+            ListNode next;
+        }
+        ```
 
 ## Homework    
 + 20180920
