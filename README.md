@@ -100,8 +100,10 @@
         class ListNode{
             //Verb.
             // Constructors
+                // 
             ListNode(Object theElement){
                 this (theElement), null;
+                // (theElement | next) as a node
             }
             LinkNode( Object theElement , ListNode n){  // ListNode > 遞迴定義
                 element = theElement;
@@ -113,6 +115,30 @@
             Object element;
             ListNode next; // next : next position(下一個記憶體位置)
         }
+        ```
+    + Inerator Class for Linked List
+        ```java
+        package DataStructures;
+
+        public class LinkedListItr{
+            LinkedListItr(ListNode theNode){
+                current = theNode;
+            }
+            public boolean isPasdtEnd(){
+                return current == null;
+            }
+            public Object retrieve(){
+                return isPasdtEnd() ? null : current.element;
+            }
+            public void advance(){
+                if(!isPasdtEnd()){
+                    current = current.next;
+                }
+            }
+            ListNode current; //CUrrent position
+        }
+        
+
         ```
 
 ## Homework    
