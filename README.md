@@ -135,7 +135,7 @@
                     current = current.next;
                 }
             }
-            ListNode current; //CUrrent position
+            ListNode current; //Current position
         }
         
 
