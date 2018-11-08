@@ -77,6 +77,11 @@
                     + 將 A 的 next position 修改為 B 的 next position
                         + [(A<sub>100</sub> | 50) (B<sub>50</sub> | 36) (D<sub>36</sub> | null)]
                         + [(A<sub>100</sub> | 36) ~~(B<sub>50</sub> | 36)~~ (D<sub>36</sub> | null)]
+                + 假定刪除 Node D
+                    + 主控權位於 B
+                    + 將 B 的 next position 修改為 null
+                        + [(A<sub>100</sub> | 50) (B<sub>50</sub> | 36) (D<sub>36</sub> | null)]
+                        + [(A<sub>100</sub> | 50) (B<sub>50</sub> | ~~36~~ **null**) ~~(D<sub>36</sub> | null)~~]
         + 火車概念： H<sub>0</sub> > A > B > C (H<sub>0</sub> >> Header)
             + 優點：當沒有資料時，Header 依舊存在
             + 缺點：浪費 Header 空間
