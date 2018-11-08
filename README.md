@@ -59,6 +59,11 @@
 
                 + 新增於 List 首 
                     + 先新增一 node (Z<sub>data</sub> | null)
+                    ```java
+                    NodeNameA = ListNode("Z")
+                    // if want to change the Z to F
+                    NodeNameA.element = "F"
+                    ```
                     + 將 null 值 = 100
                     + New List : [(Z<sub>data</sub> | **100**) (A<sub>100</sub> | 50) (B<sub>50</sub> | 36) (D<sub>36</sub> | null)]
 
