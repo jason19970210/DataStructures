@@ -40,6 +40,24 @@
         + Big Omega 下限值
         + Big Theta 接近值
         + Little Oh. 小於
++ Search Method
+    + BST (Binary Search Tree / Binary Search Algrithm)
++ ADT (Abstract Data Type) 抽象資料型態
+    + 資料儲存結構
+    + 資料操作 (新增、刪除、修改、查詢、列印)
+    + Linked List
+        + 其儲存方式：
+            + Node (節點、車廂)：(資料 | 下一個節點的位置)
+            + At the last node, the position area will be "**null**"
+        + 其操作方法：
+            + 新增
+            + 刪除
+        + 火車概念： H<sub>0</sub> > A > B > C (H<sub>0</sub> >> Header)
+            + 優點：當沒有資料時，Header 依舊存在
+            + 缺點：浪費 Header 空間
+        + 捷運概念： A > B > C > D
+            + 優點：沒有浪費 Header 空間
+            + 缺點：當沒有資料時，List 不存在
 
 ## Homework    
 + 20180920
