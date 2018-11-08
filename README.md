@@ -77,6 +77,9 @@
                     + 將 A 的 next position 修改為 B 的 next position
                         + [(A<sub>100</sub> | 50) (B<sub>50</sub> | 36) (D<sub>36</sub> | null)]
                         + [(A<sub>100</sub> | 36) ~~(B<sub>50</sub> | 36)~~ (D<sub>36</sub> | null)]
+                    + 資源佔用問題：刪除 List 但 資料依舊儲存於記憶體位置 (Recycle Linked List)
+                        + 資源回收：保留閒置記憶體
+                        + Release：將閒置記憶體釋放掉 將資源轉移回 CPU
                 + 假定刪除 Node D
                     + 主控權位於 B
                     + 將 B 的 next position 修改為 null
