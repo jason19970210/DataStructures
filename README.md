@@ -40,8 +40,10 @@
         + Big Omega 下限值
         + Big Theta 接近值
         + Little Oh. 小於
+
 + Search Method
     + BST (Binary Search Tree / Binary Search Algrithm)
+
 + ADT (Abstract Data Type) 抽象資料型態
     + 資料儲存結構
     + 資料操作 (新增、刪除、修改、查詢、列印)
@@ -50,7 +52,23 @@
             + Node (節點、車廂)：(資料 | 下一個節點的位置)
             + At the last node, the position area will be "**null**"
         + 其操作方法：
-            + 新增
+            + 新增：
+                + List : [(A<sub>100</sub> | 50) (B<sub>50</sub> | 36) (D<sub>36</sub> | null)]
+
+                + 新增於 List 首 
+                    + 先新增一 node (Z<sub>data</sub> | null)
+                    + 將 null 值 = 100
+                    + New List : [(Z<sub>data</sub> | 100) (A<sub>100</sub> | 50) (B<sub>50</sub> | 36) (D<sub>36</sub> | null)]
+
+                + 新增於 List 中
+                    + 先新增一 node (F<sub>400</sub> | null)
+                    + 將 F 的 next position 修改為 下一資料塊的 position
+                    + 再將 A 的 next position 修改為 F 的 position
+                    + New List : [(Z<sub>data</sub> | 100) (A<sub>100</sub> | ~~50~~ **400**) (F<sub>400</sub> | **50**) (B<sub>50</sub> | 36) (D<sub>36</sub> | null)]
+                + 新增於 List 末
+                    + 先新增一 node (K<sub>450</sub> | null)
+                    + 將 D 的 next position = 450
+                    + New List :
             + 刪除
         + 火車概念： H<sub>0</sub> > A > B > C (H<sub>0</sub> >> Header)
             + 優點：當沒有資料時，Header 依舊存在
