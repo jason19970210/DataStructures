@@ -185,7 +185,9 @@
                 return new LinkedListItr(itr);
             }
             public void insert(Object x, LinkedListItr p){ //9 <3.13>
-
+                if(p != null && p.current != null){
+                    p.current.next = new ListNode(x, p.current.next);
+                }
             }
             private ListNode header;
         }
