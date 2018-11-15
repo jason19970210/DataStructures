@@ -93,6 +93,8 @@
                 + 資源佔用問題：刪除 List 但 資料依舊儲存於記憶體位置 (Recycle Linked List)
                         + 資源回收：保留閒置記憶體
                         + Release：將閒置記憶體釋放掉 將資源轉移回 CPU
+            + 尋找 : 
+                + List : []
         + 火車概念 Linked List With Header： H<sub>0</sub> > A > B > C (H<sub>0</sub> >> Header)
             + 優點：當沒有資料時，Header 依舊存在
             + 缺點：浪費 Header 空間
@@ -146,27 +148,46 @@
     + Linked List Class Skeleton
         ```java
         public class LinkedList{
-            public LinkedList(){
+            public LinkedList(){ //1
                 header = new ListNode(null);
             }
-            public boolean isEmpty(){
+            public boolean isEmpty(){ //2
                 return header.next == null;
             }
-            public void makeEmpty(){
+            public void makeEmpty(){ //3
                 header.next = null;
             }
-            public LinkedListItr zeroth(){
+            public LinkedListItr zeroth(){ //4
                 return new LinkedListItr(header);
             }
-            public LinkedListItr first(){
+            public LinkedListItr first(){ //5
                 return new LinkedListItr(header.next);
             }
-            public LinkedListItr first(){
-                return new LinkedListItr(header.next);
+            public LinkedListItr find(Object x){ //6  <3.10>
+
+                ListNode itr = header.next;
+                while(itr != null && !itr.element.equals(x)){
+                    itr = itr.next;
+                }
+                return new LinkedListItr(itr);
             }
-            public LinkedListItr find(Object x){
+            public void remove(Object x){ //7 <3.11>
+                LinkedListItr p = findPrevious(x);
+                if (p.current.next != null){
+                    p.current.next = p.current.next.next; //Bypass deleted node
+                }
+            }
+            public LinkedListItr findPrevious(Object x){ //8 <3.12>
+                ListNode itr = header;
+                while(itr.next != null && !itr.element.equals(x)){
+                    itr = itr.next;
+                }
+                return new LinkedListItr(itr);
+            }
+            public void insert(Object x, LinkedListItr p){ //9 <3.13>
 
             }
+            private ListNode header;
         }
         ```
 
