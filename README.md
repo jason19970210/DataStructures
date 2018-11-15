@@ -188,7 +188,7 @@
                 if(p != null && p.current != null){
                     p.current.next = new ListNode(x, p.current.next);
                 }
-            }
+            } // void 不用回傳值
             private ListNode header;
         }
         ```
