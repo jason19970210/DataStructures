@@ -179,7 +179,7 @@
             }
             public LinkedListItr findPrevious(Object x){ //8 <3.12>
                 ListNode itr = header;
-                while(itr.next != null && !itr.element.equals(x)){
+                while(itr.next != null && !itr.next.element.equals(x)){
                     itr = itr.next;
                 }
                 return new LinkedListItr(itr);
