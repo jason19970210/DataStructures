@@ -131,14 +131,14 @@
             LinkedListItr(ListNode theNode){
                 current = theNode;
             }
-            public boolean isPasdtEnd(){
+            public boolean isPastEnd(){
                 return current == null;
             }
             public Object retrieve(){ // 存取
-                return isPasdtEnd() ? null : current.element;
+                return isPastEnd() ? null : current.element;
             }
             public void advance(){
-                if(!isPasdtEnd()){
+                if(!isPastEnd()){
                     current = current.next;
                 }
             }
