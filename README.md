@@ -198,6 +198,40 @@
     > 逆向、轉置
     + 堆疊較難 "查詢" (沒有所謂的查詢、刪除)
     + 實作方式 (兩種)：Linked List、Array
+    ```java
+    // 8 public functions
+
+    public class StackLi{
+        public StackLi(){
+            topOfStack = null;
+        }
+        public boolean isFull(){
+            return false();
+        }
+
+        // ----------------------------
+        public boolean isEmpty(){
+            return topOfStack == null;
+        }
+        public void makeEmpty(){
+            topOfStack = null;
+        }
+        public void push(Object x){
+            // figure 3.38
+        }
+        public Object top(){
+            // figure 3.39
+        }
+        public void pop() throws Underflow{
+            // figure 3.40
+        }
+        public Object topAndPop(){
+            // figure 3.40
+        }
+        private ListNode topOfStack
+
+    }
+    ```
 
 ## Homework    
 + 20180920
