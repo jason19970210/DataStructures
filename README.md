@@ -260,7 +260,11 @@
             後序：+3 +5 x8
             前序：3 5 8 x +
             ```
-            + 
+            1. 當資料為 opening symbol >> push
+            2. 當資料為 closing symbol >> pop >> 比對
+            3. 當資料全部讀取完
+                + Stack 還有資料 => error => !Balance
+                + 沒有資料 => 全部平衡
         + Postfix Evolution
             + 給定後序 如何計算結果
         + ~Function Calls~
