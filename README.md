@@ -250,10 +250,10 @@
     }
     ```
     + 堆疊的應用
-        + Balancing Symbol
-        + Postfix Expression
+        + Balancing Symbol 符號平衡
+        + Postfix Expression 後序表示法
         + Postfix Evolution
-        + Function Calls
+        + ~Function Calls~
 
 ## Homework    
 + 20180920
