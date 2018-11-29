@@ -112,7 +112,7 @@
                 this (theElement), null;
                 // (theElement | next) as a node
             }
-            LinkNode( Object theElement , ListNode n){  // ListNode > 遞迴定義
+            LinkNode(Object theElement ,ListNode n){  // ListNode > 遞迴定義
                 element = theElement;
                 next = n;
             }
@@ -192,6 +192,12 @@
             private ListNode header;
         }
         ```
++ Stack ADT 堆疊
+    + Model: Push & Pop (存取 & 取出)
+        + top : 指向最上層
+    > 逆向、轉置
+    + 堆疊較難 "查詢" (沒有所謂的查詢、刪除)
+    + 實作方式 (兩種)：Linked List、Array
 
 ## Homework    
 + 20180920
