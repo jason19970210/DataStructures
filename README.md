@@ -216,22 +216,44 @@
         public void makeEmpty(){
             topOfStack = null;
         }
+
+
+        //`push` will occured `Overflow`
         public void push(Object x){
             // figure 3.38
+            // 1. 產生新車廂 ListNode 並放入資料
+            // 2. 新車廂的 next 是 topOfStack
+            // 3. 將 topOfStack 指向新車廂
+            topOfStack = new ListNode(x, topOfStack)
         }
         public Object top(){
             // figure 3.39
+            if ( isEmpty() ){
+
+            }
         }
+
+
+        //`pop` will occured `Underflow`
         public void pop() throws Underflow{
             // figure 3.40
         }
         public Object topAndPop(){
             // figure 3.40
+            if ( isEmpty() ){
+                throw new Underflow();
+            }
+            topOfStack = topOfStack.next();
         }
         private ListNode topOfStack
 
     }
     ```
+    + 堆疊的應用
+        + Balancing Symbol
+        + Postfix Expression
+        + Postfix Evolution
+        + Function Calls
 
 ## Homework    
 + 20180920
