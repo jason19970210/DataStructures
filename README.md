@@ -251,8 +251,17 @@
     ```
     + 堆疊的應用
         + Balancing Symbol 符號平衡
+            + opening symbol / closing symbol
+            + ex. (),[],{}
         + Postfix Expression 後序表示法
+            + 將中序轉成後序
+        ```
+        中序：3+5x8
+        後序：+3 +5 x8
+        前序：3 5 8 x +
+        ```
         + Postfix Evolution
+            + 給定後序 如何計算結果
         + ~Function Calls~
 
 ## Homework    
