@@ -283,6 +283,10 @@
     + Parent/Children
     + Sibilings : Nodes with the same parents are siblings
     + Grandparents/Grandchildren
+    + Path : 點的路徑
+        > ex. (A,E,J)
+    + Depth : from root to self
+    + Degree : Number of children
 
 ## Homework    
 + 20180920
