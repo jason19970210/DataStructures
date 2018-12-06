@@ -268,7 +268,15 @@
         + Postfix Evolution
             + 給定後序 如何計算結果
         + ~Function Calls~
-+ Queue ADT 
++ Queue ADT 佇列/排隊理論
+    + Queue Model
+        + input to a queue by Enqueue
+        + output by Dequeue
+    + Implementation for Queues
+        + Queues can be implementation with arrays or linked list
+        + Array Implementation to Queues
++ **Trees, Binary Trees, Binary Search Tree, Forest**
+    + 
 
 ## Homework    
 + 20180920
