@@ -276,17 +276,28 @@
         + Queues can be implementation with arrays or linked list
         + Array Implementation to Queues
 + **Trees, Binary Trees, Binary Search Tree, Forest**
-    + Root (as level 0)
-    + with_Child > Nonterminal nodes/internal nodes
-    + without_Child > Leaves/Terminal nodes/external nodes
-    + Level
-    + Parent/Children
-    + Sibilings : Nodes with the same parents are siblings
-    + Grandparents/Grandchildren
-    + Path : 點的路徑
-        > ex. (A,E,J)
-    + Depth : from root to self
-    + Degree : Number of children
+    + Noun explain
+        + Root (as level 0)
+        + with_Child > Nonterminal nodes/internal nodes
+        + without_Child > Leaves/Terminal nodes/external nodes
+        + Level
+        + Parent/Children
+        + Sibilings : Nodes with the same parents are siblings
+        + Grandparents/Grandchildren
+        + Path : 點的路徑
+            > ex. (A,E,J)
+        + Depth : from root to self
+        + Degree : Number of children
+    + Prefix, Infix, Postfix
+        + Prefix
+        + Infix
+        + Postfix
+        + Prefix & Infix
+        + Postfix & Infix
+        + Prefix & Postfix
+    + With Binary Tree
+    + With Array
+    + With Linked List
 
 ## Homework    
 + 20180920
