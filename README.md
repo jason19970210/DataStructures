@@ -298,6 +298,31 @@
     + With Binary Tree
     + With Array
     + With Linked List
+    + Sorting
+        + Bubble Sorting
+            + 時間複雜度：O(n<sup>2</sup>)
+                + 次數：n x (n-1)
+        + Selection Sorting
+        + Insertion Sorting
+            + 時間複雜度：O(n<sup>2</sup>)
+            + 穩定排序
+        + Shell Sorting
+            + 改善Insertion Sorting
+            + p.49
+            + 時間複雜度：O(n<sup>2</sup>)
+                + 降低 Insertion 的次數
+            + 不穩定排序(因為分組會導致排序交錯)
+        + Heap Sorting 堆疊/堆積
+            + 三個為一堆
+            + Max Heap
+                + 由小到大排序
+            + Min Heap
+                + 由大到小排序
+            + 二元樹陣列表示建立堆疊
+                + Complete Binary Tree
+        + Merge Sorting
+        + QuickSort
+        + Radix Sorting
 
 ## Homework    
 + 20180920
